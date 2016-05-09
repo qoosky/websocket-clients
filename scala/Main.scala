@@ -17,7 +17,7 @@ object Main {
 
     var opened: Boolean = false
 
-    // WebSocket から流れてきたデータを処理します。初回のみ対応してデータ流します。
+    // Handle messages from WebSocket. Send your API token once when it first receives a message.
     val flow: Flow[Message, Message, _] =
       Flow[Message].mapConcat{
         case message: TextMessage.Strict => {
@@ -26,7 +26,7 @@ object Main {
             opened = true
             List(TextMessage("""{"token":"XXXX-XXXX-XXXX-XXXX"}"""))
           }
-          else Nil // 空のリスト
+          else Nil // Empty List
         }
         case _ => Nil
       }
