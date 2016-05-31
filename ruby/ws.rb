@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 require 'websocket-client-simple'
 
-ws = WebSocket::Client::Simple.connect 'ws://api.qoosky.net/v1/controller/actuator/ws'
+ws = WebSocket::Client::Simple.connect 'ws://api.qoosky.io/v1/controller/actuator/ws'
 
 ws.on :open do
   if ws.handshake.valid?

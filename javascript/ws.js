@@ -1,4 +1,4 @@
-var ws = new require('ws')('ws://api.qoosky.net/v1/controller/actuator/ws');
+var ws = new require('ws')('ws://api.qoosky.io/v1/controller/actuator/ws');
 
 ws.on('open', function(){
   console.log("Successfully connected to the API server.")

@@ -33,7 +33,7 @@ object Main {
 
     // WebSocket(Source) ~> flow ~> WebSocket(Sink)
     val (upgradeResponse, _) =
-      Http().singleWebSocketRequest(WebSocketRequest("ws://api.qoosky.net/v1/controller/actuator/ws"), flow)
+      Http().singleWebSocketRequest(WebSocketRequest("ws://api.qoosky.io/v1/controller/actuator/ws"), flow)
     val connected = upgradeResponse.map { upgrade: WebSocketUpgradeResponse =>
       if (upgrade.response.status == StatusCodes.SwitchingProtocols) Done
       else throw new RuntimeException("An unexpected error has occurred: %s" format upgrade.response.status)

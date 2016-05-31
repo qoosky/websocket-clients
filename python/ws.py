@@ -19,7 +19,7 @@ def on_close(ws):
 
 if __name__ == "__main__":
     websocket.enableTrace(False)
-    ws = websocket.WebSocketApp("ws://api.qoosky.net/v1/controller/actuator/ws",
+    ws = websocket.WebSocketApp("ws://api.qoosky.io/v1/controller/actuator/ws",
                                 on_open = on_open,
                                 on_error = on_error,
                                 on_message = on_message,

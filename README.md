@@ -1,6 +1,6 @@
 Qoosky WebSocket API Clients
 ==================
-This repository provides simple WebSocket clients especially intended to be used for Qoosky Cloud Controller API.  You can control your internet connected devices such as Raspberry Pi and Intel Edison in real-time and remotely by using the WebSocket API.  Please refer to the [Qoosky help](https://www.qoosky.net/help) for the information about the server architecture and how to use the API controller.
+This repository provides simple WebSocket clients especially intended to be used for Qoosky Cloud Controller API.  You can control your internet connected devices such as Raspberry Pi and Intel Edison in real-time and remotely by using the WebSocket API.  Please refer to the [Qoosky help](https://www.qoosky.io/help) for the information about the server architecture and how to use the API controller.
 
 
 Python
@@ -22,7 +22,7 @@ Python
 
 ### pyenv
 
-If you use [pyenv](https://www.qoosky.net/techs/0cf33bd9ac), please execute the following commands to install pythons.
+If you use [pyenv](https://www.qoosky.io/techs/0cf33bd9ac), please execute the following commands to install pythons.
 
 	pyenv install 2.7.10
 	pyenv rehash
@@ -57,7 +57,7 @@ This is a simple wrapper library of [WebSocket Ruby](https://github.com/imanel/w
 
 ## About CA Certs
 
-This library does not let our source code trust a custom root CA cert including our `qoosky-ca-root.crt`.  Instead, `OpenSSL::SSL::VERIFY_NONE` is [specified](https://github.com/shokai/websocket-client-simple/blob/master/lib/websocket-client-simple/client.rb#L25).
+This library does not let our source code trust a custom root CA cert including our `qoosky-io-ca-root.crt`.  Instead, `OpenSSL::SSL::VERIFY_NONE` is [specified](https://github.com/shokai/websocket-client-simple/blob/master/lib/websocket-client-simple/client.rb#L25).
 
 
 JavaScript
@@ -119,8 +119,8 @@ Scala
 
 ## Requirements
 
-- [sbt](https://www.qoosky.net/techs/1ec18db8bc)
-- [akka-http](https://www.qoosky.net/techs/a98142497c#%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%B5%E3%82%A4%E3%83%89)
+- [sbt](https://www.qoosky.io/techs/1ec18db8bc)
+- [akka-http](https://www.qoosky.io/techs/a98142497c#%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%82%B5%E3%82%A4%E3%83%89)
 
 ## Build the fat JAR
 

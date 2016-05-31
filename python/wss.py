@@ -20,10 +20,10 @@ def on_close(ws):
 
 if __name__ == "__main__":
     websocket.enableTrace(False)
-    ws = websocket.WebSocketApp("wss://api.qoosky.net/v1/controller/actuator/ws",
+    ws = websocket.WebSocketApp("wss://api.qoosky.io/v1/controller/actuator/ws",
                                 on_open = on_open,
                                 on_error = on_error,
                                 on_message = on_message,
                                 on_close = on_close)
-    ws.run_forever(sslopt={"ca_certs": '../qoosky-ca-root.crt'}) # Trust Qoosky Root CA
+    ws.run_forever(sslopt={"ca_certs": '../qoosky-io-ca-root.crt'}) # Trust Qoosky Root CA
     # ws.run_forever(sslopt={"cert_reqs": ssl.CERT_NONE}) # Trust any server certificates.
