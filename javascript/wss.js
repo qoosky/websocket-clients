@@ -1,4 +1,4 @@
-require('ssl-root-cas').addFile(__dirname + '/../qoosky-io-ca-root.crt'); // Trust Qoosky Root CA
+require('ssl-root-cas').addFile(__dirname + '/qoosky-io-ca-root.crt'); // Trust Qoosky Root CA
 // process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; // Trust any server certificates.
 
 var ws = new require('ws')('wss://api.qoosky.io/v1/controller/actuator/ws');

@@ -60,36 +60,6 @@ This is a simple wrapper library of [WebSocket Ruby](https://github.com/imanel/w
 This library does not let our source code trust a custom root CA cert including our `qoosky-io-ca-root.crt`.  Instead, `OpenSSL::SSL::VERIFY_NONE` is [specified](https://github.com/shokai/websocket-client-simple/blob/master/lib/websocket-client-simple/client.rb#L25).
 
 
-JavaScript
-==================
-
-## Libraries
-
-- [websockets/ws](https://github.com/websockets/ws)
-
-There are many other similar JavaScript client libraries.  However, some libraries like [WebSocket-Node](https://github.com/theturtle32/WebSocket-Node) have [known issues](https://github.com/theturtle32/WebSocket-Node/issues/92).
-
-## Installation
-
-Raspberry Pi (NOOBS)
-
-	sudo apt-get update
-	sudo apt-get install npm
-	npm install ws
-	npm install ssl-root-cas
-
-CentOS 6
-
-	sudo yum --enablerepo=epel install npm
-	npm install ws
-	npm install ssl-root-cas
-
-## Execute client applications
-
-	node ws.js
-	node wss.js
-
-
 Scala
 ==================
 
