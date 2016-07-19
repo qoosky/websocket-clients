@@ -90,30 +90,6 @@ CentOS 6
 	node wss.js
 
 
-Java
-==================
-
-## Libraries
-
-- [Java WebSockets](https://github.com/TooTallNate/Java-WebSocket)
-
-There may be some other useful libraries like [engine.io-client-java](https://github.com/socketio/engine.io-client-java).
-
-## Installation & Build
-
-Please download the JAR file from [The Central Repository](http://search.maven.org/#search|ga|1|a%3A%22Java-WebSocket%22) and execute the following command.
-
-	javac -cp ./Java-WebSocket-1.3.0.jar Main.java WSClient.java
-
-## Execute the client application
-
-	java -cp '.:./Java-WebSocket-1.3.0.jar' Main
-
-## About SSL connections
-
-SSL example is not included yet. Please contribute by forking and creating pull requests :)
-
-
 Scala
 ==================
 
