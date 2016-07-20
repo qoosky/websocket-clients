@@ -83,7 +83,7 @@ ws.on('close', function(){
 });
 ```
 
-それぞれ以下の部分を [Qoosky Cloud Controller](https://www.qoosky.io/help/api) で発行した API トークンで書き換えてください。
+それぞれ以下の部分を [Qoosky Cloud Controller](https://www.qoosky.io/help/api/cc) で発行した API トークンで書き換えてください。
 
 	ws.send('{"token":"XXXX-XXXX-XXXX-XXXX"}');
 

@@ -102,7 +102,7 @@ loop do
 end
 ```
 
-以下の部分を [Qoosky Cloud Controller](https://www.qoosky.io/help/api) で発行した API トークンで書き換えてください。
+以下の部分を [Qoosky Cloud Controller](https://www.qoosky.io/help/api/cc) で発行した API トークンで書き換えてください。
 
 	ws.send '{"token":"XXXX-XXXX-XXXX-XXXX"}'
 
