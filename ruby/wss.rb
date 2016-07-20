@@ -1,4 +1,4 @@
-#!/path/to/ruby
+#!/usr/bin/ruby
 # -*- coding: utf-8 -*-
 require 'websocket-client-simple'
 

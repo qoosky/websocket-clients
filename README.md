@@ -38,28 +38,6 @@ Then install the library.
 If you want to use the API in some proxy environments, please set the proxy information by referring [here](https://github.com/liris/websocket-client#http-proxy).  In proxy environments, [WebSocket connection can sometimes fail](https://en.wikipedia.org/wiki/WebSocket#Proxy_traversal).  Be sure to use SSL (wss) connections rather than unencrypted ones to prevent our WebSocket headers from being dropped by intermediate proxy servers.
 
 
-Ruby
-==================
-
-## Requirements
-
-At least tested with ruby 2.1.3
-
-## libraries
-
-- [websocket-client-simple](https://github.com/shokai/websocket-client-simple)
-
-This is a simple wrapper library of [WebSocket Ruby](https://github.com/imanel/websocket-ruby).  There are also some other WebSocket client libraries such as [websocket-eventmachine-client](https://github.com/imanel/websocket-eventmachine-client).
-
-## Installation
-
-	sudo gem install websocket-client-simple -v 0.3.0
-
-## About CA Certs
-
-This library does not let our source code trust a custom root CA cert including our `qoosky-io-ca-root.crt`.  Instead, `OpenSSL::SSL::VERIFY_NONE` is [specified](https://github.com/shokai/websocket-client-simple/blob/master/lib/websocket-client-simple/client.rb#L25).
-
-
 Scala
 ==================
 
