@@ -1,4 +1,4 @@
-#!/path/to/python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 import websocket
 

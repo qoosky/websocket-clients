@@ -1,4 +1,4 @@
-#!/path/to/python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 import websocket
 import ssl
@@ -25,5 +25,5 @@ if __name__ == "__main__":
                                 on_error = on_error,
                                 on_message = on_message,
                                 on_close = on_close)
-    ws.run_forever(sslopt={"ca_certs": '../qoosky-io-ca-root.crt'}) # Trust Qoosky Root CA
+    ws.run_forever(sslopt={"ca_certs": './qoosky-io-ca-root.crt'}) # Trust Qoosky Root CA
     # ws.run_forever(sslopt={"cert_reqs": ssl.CERT_NONE}) # Trust any server certificates.
