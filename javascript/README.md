@@ -36,48 +36,52 @@ OS によっては既にインストール済みの場合があります。以�
 
 平文通信を行う場合 (ws.js)
 
-	var ws = new require('ws')('ws://api.qoosky.io/v1/controller/actuator/ws');
-	
-	ws.on('open', function(){
-	  console.log("Successfully connected to the API server.")
-	  ws.send('{"token":"XXXX-XXXX-XXXX-XXXX"}');
-	});
-	
-	ws.on('error', function(err){
-	  console.log("An unexpected error has occurred: " + err);
-	});
-	
-	ws.on('message', function(data){
-	  console.log("received: " + data);
-	});
-	
-	ws.on('close', function(){
-	  console.log("Connection closed.");
-	});
+```javascript
+var ws = new require('ws')('ws://api.qoosky.io/v1/controller/actuator/ws');
+
+ws.on('open', function(){
+  console.log("Successfully connected to the API server.")
+  ws.send('{"token":"XXXX-XXXX-XXXX-XXXX"}');
+});
+
+ws.on('error', function(err){
+  console.log("An unexpected error has occurred: " + err);
+});
+
+ws.on('message', function(data){
+  console.log("received: " + data);
+});
+
+ws.on('close', function(){
+  console.log("Connection closed.");
+});
+```
 
 SSL 通信を行う場合 (wss.js)
 
-	require('ssl-root-cas').addFile(__dirname + '/qoosky-io-ca-root.crt'); // Trust Qoosky Root CA
-	// process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; // Trust any server certificates.
-	
-	var ws = new require('ws')('wss://api.qoosky.io/v1/controller/actuator/ws');
-	
-	ws.on('open', function(){
-	  console.log("Successfully connected to the API server.")
-	  ws.send('{"token":"XXXX-XXXX-XXXX-XXXX"}');
-	});
-	
-	ws.on('error', function(err){
-	  console.log("An unexpected error has occurred: " + err);
-	});
-	
-	ws.on('message', function(data){
-	  console.log("received: " + data);
-	});
-	
-	ws.on('close', function(){
-	  console.log("Connection closed.");
-	});
+```javascript
+require('ssl-root-cas').addFile(__dirname + '/qoosky-io-ca-root.crt'); // Trust Qoosky Root CA
+// process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'; // Trust any server certificates.
+
+var ws = new require('ws')('wss://api.qoosky.io/v1/controller/actuator/ws');
+
+ws.on('open', function(){
+  console.log("Successfully connected to the API server.")
+  ws.send('{"token":"XXXX-XXXX-XXXX-XXXX"}');
+});
+
+ws.on('error', function(err){
+  console.log("An unexpected error has occurred: " + err);
+});
+
+ws.on('message', function(data){
+  console.log("received: " + data);
+});
+
+ws.on('close', function(){
+  console.log("Connection closed.");
+});
+```
 
 それぞれ以下の部分を [Qoosky Cloud Controller](https://www.qoosky.io/help/api) で発行した API トークンで書き換えてください。
 
