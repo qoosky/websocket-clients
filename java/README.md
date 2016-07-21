@@ -97,7 +97,7 @@ class WSClient extends WebSocketClient {
 
 	pi@raspberrypi:~ $ java -cp '.:./Java-WebSocket-1.3.0.jar' Main
 
-以下のように出力されれば成功です。ゲームパッド状の [Cloud Controller](https://www.qoosky.io/help/api/cc) を起動すれば相互接続できる状態になりました。
+以下のように出力されれば成功です。ゲームパッド状の [Cloud Controller](https://www.qoosky.io/account/api/cc) を起動すれば相互接続できる状態になりました。
 
 	pi@raspberrypi:~ $ java -cp '.:./Java-WebSocket-1.3.0.jar' Main
 	Successfully connected to the API server.

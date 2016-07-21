@@ -107,7 +107,7 @@ if __name__ == "__main__":
 	pi@raspberrypi:~ $ python ws.py
 	pi@raspberrypi:~ $ python wss.py
 
-以下のように出力されれば成功です。ゲームパッド状の [Cloud Controller](https://www.qoosky.io/help/api/cc) を起動すれば相互接続できる状態になりました。
+以下のように出力されれば成功です。ゲームパッド状の [Cloud Controller](https://www.qoosky.io/account/api/cc) を起動すれば相互接続できる状態になりました。
 
 ws.py
 

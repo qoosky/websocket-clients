@@ -142,7 +142,7 @@ Raspberry Pi で実行してみましょう。
 
 	pi@raspberrypi:~ $ java -jar ws-assembly-1.0.jar
 
-以下のように出力されれば成功です。ゲームパッド状の [Cloud Controller](https://www.qoosky.io/help/api/cc) を起動すれば相互接続できる状態になりました。
+以下のように出力されれば成功です。ゲームパッド状の [Cloud Controller](https://www.qoosky.io/account/api/cc) を起動すれば相互接続できる状態になりました。
 
 	pi@raspberrypi:~ $ java -jar ws-assembly-1.0.jar
 	Successfully connected to the API server.

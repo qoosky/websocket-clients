@@ -114,7 +114,7 @@ end
 	pi@raspberrypi:~ $ ruby ws.rb
 	pi@raspberrypi:~ $ ruby wss.rb
 
-以下のように出力されれば成功です。ゲームパッド状の [Cloud Controller](https://www.qoosky.io/help/api/cc) を起動すれば相互接続できる状態になりました。
+以下のように出力されれば成功です。ゲームパッド状の [Cloud Controller](https://www.qoosky.io/account/api/cc) を起動すれば相互接続できる状態になりました。
 
 ws.rb
 
