@@ -1,12 +1,12 @@
 import org.java_websocket.client.*;
 import org.java_websocket.handshake.*;
-import org.java_websocket.drafts.Draft_17;
+import org.java_websocket.drafts.Draft_6455;
 import java.net.URISyntaxException;
 
 class WSClient extends WebSocketClient {
 
     public WSClient(String url) throws URISyntaxException {
-        super(new java.net.URI(url), new Draft_17());
+        super(new java.net.URI(url), new Draft_6455());
     }
 
     public void onOpen(ServerHandshake handshakedata) {
@@ -24,6 +24,7 @@ class WSClient extends WebSocketClient {
     }
 
     public void onClose(int code, String reason, boolean remote) {
+        System.out.println(reason);
         System.out.println("Connection closed.");
     }
 }
