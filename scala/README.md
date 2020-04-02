@@ -3,7 +3,7 @@
 WebSocket client sample of Scala for [Qoosky API](https://www.qoosky.io/help/api).
 
 - [Akka 2.5.31](https://doc.akka.io//docs/akka/2.5.31/?language=scala)
-- [Akka HTTP 10.1.11](https://doc.akka.io//docs/akka-http/10.0.9/scala/http/)
+- [Akka HTTP 10.1.11](https://doc.akka.io//docs/akka-http/10.1.11/scala/http/)
 
 # How to build and run
 
