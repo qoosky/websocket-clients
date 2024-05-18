@@ -20,6 +20,6 @@ def on_close(ws):
 
 if __name__ == "__main__":
     websocket.enableTrace(False)
-    ws = websocket.WebSocketApp("wss://api.qoosky.io/v1/websocket-relay-server/actuator/ws", on_open=on_open, on_error=on_error, on_message=on_message, on_close=on_close)
-    ws.run_forever(sslopt={"ca_certs": '../qoosky-io-ca-root.crt'})
+    ws = websocket.WebSocketApp("wss://api.qoosky.dev/v1/websocket-relay-server/actuator/ws", on_open=on_open, on_error=on_error, on_message=on_message, on_close=on_close)
+    ws.run_forever(sslopt={"ca_certs": '../qoosky.dev-ca-root.crt'})
     # ws.run_forever(sslopt={"cert_reqs": ssl.CERT_NONE})

@@ -19,5 +19,5 @@ def on_close(ws):
 
 if __name__ == "__main__":
     websocket.enableTrace(False)
-    ws = websocket.WebSocketApp("ws://api.qoosky.io/v1/websocket-relay-server/actuator/ws", on_open=on_open, on_error=on_error, on_message=on_message, on_close=on_close)
+    ws = websocket.WebSocketApp("ws://api.qoosky.dev/v1/websocket-relay-server/actuator/ws", on_open=on_open, on_error=on_error, on_message=on_message, on_close=on_close)
     ws.run_forever()

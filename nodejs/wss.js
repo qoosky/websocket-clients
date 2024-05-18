@@ -1,7 +1,7 @@
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 
 const WebSocket = require('ws');
-const ws = new WebSocket('wss://api.qoosky.io/v1/websocket-relay-server/actuator/ws');
+const ws = new WebSocket('wss://api.qoosky.dev/v1/websocket-relay-server/actuator/ws');
 
 ws.on('open', function(){
   console.log("Successfully connected to the API server.")

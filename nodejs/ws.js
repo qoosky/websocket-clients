@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const ws = new WebSocket('ws://api.qoosky.io/v1/websocket-relay-server/actuator/ws');
+const ws = new WebSocket('ws://api.qoosky.dev/v1/websocket-relay-server/actuator/ws');
 
 ws.on('open', function(){
   console.log("Successfully connected to the API server.")

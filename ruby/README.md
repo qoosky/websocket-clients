@@ -1,6 +1,6 @@
 # Ruby
 
-WebSocket client sample of Ruby for [Qoosky API](https://www.qoosky.io/help/api).
+WebSocket client sample of Ruby for [Qoosky API](https://www.qoosky.dev/help/api).
 
 - [websocket-client-simple](https://github.com/shokai/websocket-client-simple)
 
