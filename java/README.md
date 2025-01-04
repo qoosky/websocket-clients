@@ -1,6 +1,6 @@
 # Java
 
-WebSocket client sample of Java for [Qoosky API](https://www.qoosky.dev/help/api).
+WebSocket client sample of Java for [Qoosky API](https://www.qoosky.dev/docs/apis/).
 
 - [Java WebSockets](https://github.com/TooTallNate/Java-WebSocket)
 
