@@ -1,6 +1,6 @@
 # Python
 
-WebSocket client sample of Python 2 and 3 for [Qoosky API](https://www.qoosky.dev/help/api).
+WebSocket client sample of Python 2 and 3 for [Qoosky API](https://www.qoosky.dev/docs/apis/).
 
 - [websocket-client](https://github.com/websocket-client/websocket-client)
 
