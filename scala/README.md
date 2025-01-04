@@ -1,6 +1,6 @@
 # Scala
 
-WebSocket client sample of Scala for [Qoosky API](https://www.qoosky.dev/help/api).
+WebSocket client sample of Scala for [Qoosky API](https://www.qoosky.dev/docs/apis/).
 
 - [Akka 2.5.31](https://doc.akka.io//docs/akka/2.5.31/?language=scala)
 - [Akka HTTP 10.1.11](https://doc.akka.io//docs/akka-http/10.1.11/scala/http/)
