@@ -1,6 +1,6 @@
 # Node.js
 
-WebSocket client sample of Node.js for [Qoosky API](https://www.qoosky.dev/help/api).
+WebSocket client sample of Node.js for [Qoosky API](https://www.qoosky.dev/docs/apis/).
 
 - [websockets/ws](https://github.com/websockets/ws)
 
